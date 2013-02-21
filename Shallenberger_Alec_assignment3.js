@@ -36,7 +36,39 @@ var Restraunt = function(name) {
 var PlaceToEat = Restraunt("Olive Garden", "Red Lobster", "Stevie B's", "Outback Steakhouse")
 console.log(PlaceToEat);
 
-// 
+// Number, While Loop
+var EstimatedPrice = 40,
+	CashIHave
+while (EstimatedPrice > 10) {
+	console.log(EstimatedPrice + " dollars is the amount of money I have in my wallet!");
+	EstimatedPrice--;
+};
+console.log("Nice, " + EstimatedPrice + " dollars is the change I have left after paying for dinner." );
+
+// Object, Far Loop
+var Restraunts = {
+	Names: [ 
+		"Olive Garden",
+		"Red Lobster",
+		"Stevie B's",
+		"Outback Steakhouse"
+	],
+	Prices: [
+		25,
+		30,
+		15,
+		20
+	],
+};
+var key = "Names";
+console.log( Restraunts[key] );
+console.log( Restraunts.Prices );
+
+
+
+
+
+	
 
 
 
