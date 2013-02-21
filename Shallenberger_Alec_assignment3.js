@@ -64,6 +64,10 @@ var key = "Names";
 console.log( Restraunts[key] );
 console.log( Restraunts.Prices );
 
+for (var key in Restraunts) {
+	console.log("Names: " + Restraunts[key] );
+};
+
 
 
 
