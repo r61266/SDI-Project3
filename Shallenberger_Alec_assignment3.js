@@ -6,13 +6,13 @@ alert("JavaScript works!");
 // SDI-Project 3
 
 // Array
-var Restraunts = [
+var Restaurant = [
 	"Olive Garden",
 	"Red Lobster",
 	"Stevie B's",
 	"Outback Steakhouse"
 ]
-console.log( Restraunts )
+console.log( Restaurant )
 var EstimatedPrice = [
 	25,
 	30,
@@ -20,20 +20,20 @@ var EstimatedPrice = [
 	20
 ]
 console.log( EstimatedPrice )
-console.log("My four choices of restraunts are " + Restraunts + " ,but I don't know which one I want to go to.")
+console.log("My four choices of restaurants are " + Restaurants + " ,but I don't know which one I want to go to.")
 console.log("The prices for each restraunt in order are " + EstimatedPrice + ".")
 
 // Boolean, Return
-var Restraunt = function(name) {
+var Restaurant = function(name) {
 	var EstimatedPrice = (25, 30, 15, 20), 
 		Place, Places
-	if (EstimatedPrice < 40) { Place = "will try a different restraunt"; }
+	if (EstimatedPrice < 40) { Place = "will try a different restaurant"; }
 	else (EstimatedPrice > 40) ;{ Places = "will definitely be eating here tonight!"; }
 	Place = "I " + Place + ", if it is to expensive."
 	Places = "I " + Places + ", if it is just the right price."
 	return Places;
 }; 
-var PlaceToEat = Restraunt("Olive Garden", "Red Lobster", "Stevie B's", "Outback Steakhouse")
+var PlaceToEat = Restaurant("Olive Garden", "Red Lobster", "Stevie B's", "Outback Steakhouse")
 console.log(PlaceToEat);
 
 // Number, While Loop
@@ -46,7 +46,7 @@ while (EstimatedPrice > 10) {
 console.log("Nice, " + EstimatedPrice + " dollars is the change I have left after paying for dinner." );
 
 // Object, Far Loop
-var Restraunts = {
+var Restaurants = {
 	Names: [ 
 		"Olive Garden",
 		"Red Lobster",
@@ -61,11 +61,11 @@ var Restraunts = {
 	],
 };
 var key = "Names";
-console.log( Restraunts[key] );
-console.log( Restraunts.Prices );
+console.log( Restaurants[key] );
+console.log( Restaurants.Prices );
 
-for (var key in Restraunts) {
-	console.log("Names: " + Restraunts[key] );
+for (var key in Restaurants) {
+	console.log("Names: " + Restaurants[key] );
 };
 
 //String, Return
@@ -86,29 +86,29 @@ console.log("I have exactly " + haveDinner + " dollars with me!");
 //JSON Data
 
 var json = {
-	"Restraunts": [
+	"Restaurants": [
 		{
-			"Restrauntname": "Olive Garden",
+			"Restaurantname": "Olive Garden",
 			"Price": 25
 		},
 		{
-			"Restrauntname": "Red Lobster",
+			"Restaurantname": "Red Lobster",
 			"Price": 30
 		},
 		{
-			"Restrauntname": "Stevie B's",
+			"Restaurantname": "Stevie B's",
 			"Price": 15
 		},
 		{
-			"Restrauntname": "Outback Steakhouse",
+			"Restaurantname": "Outback Steakhouse",
 			"Price": 20
 		}
 	]
 };
 var handelData = function(json) {
-	for (var i = 0; i < json.Restraunts.length; i++){
-		var Restraunt = json.Restraunts[i];
-		console.log("Restraunt name: " + Restraunt.Restrauntname + ", Price: " + Restraunt.Price);
+	for (var i = 0; i < json.Restaurants.length; i++){
+		var Restaurant = json.Restaurants[i];
+		console.log("Restraunt name: " + Restaurant.Restaurantname + ", Price: " + Restaurant.Price);
 		};
 };
 
