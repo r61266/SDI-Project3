@@ -68,6 +68,74 @@ for (var key in Restraunts) {
 	console.log("Names: " + Restraunts[key] );
 };
 
+//String, Return
+var EstimatedPrice = function(Cash) {
+	var PriceForDinner = 15,
+		EachPlate;
+	if (Cash < PriceForDinner) {
+		console.log("I definitely don't have enough money!");
+		return;
+	}
+	Eachplate = Math.floor(Cash / PriceForDinner);
+	return EachPlate;
+};
+
+var haveDinner = EstimatedPrice(30);
+console.log("I have exactly " + haveDinner + " dollars with me!");
+
+//JSON Data
+
+var json = {
+	"Restraunts": [
+		{
+			"Restrauntname": "Olive Garden",
+			"Price": 25
+		},
+		{
+			"Restrauntname": "Red Lobster",
+			"Price": 30
+		},
+		{
+			"Restrauntname": "Stevie B's",
+			"Price": 15
+		},
+		{
+			"Restrauntname": "Outback Steakhouse",
+			"Price": 20
+		}
+	]
+};
+var handelData = function(json) {
+	for (var i = 0; i < json.Restraunts.length; i++){
+		var Restraunt = json.Restraunts[i];
+		console.log("Restraunt name: " + Restraunt.Restrauntname + ", Price: " + Restraunt.Price);
+		};
+};
+
+handelData(json);
+
+//
+var jsonstring = JSON.stringify(json);
+console.log(jsonstring);
+
+var receivedjson = JSON.parse(jsonstring);
+console.log(receivedjson);
+
+	
+	
+	
+	
+	
+	
+
+	
+
+	
+
+
+
+
+
 
 
 
